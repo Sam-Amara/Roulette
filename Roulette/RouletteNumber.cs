@@ -39,8 +39,8 @@ namespace Roulette
                 hasRight = (intVal + 1) % 3 != 1;
                 hasBottom = (intVal + 3) < 37;
 
-                EvenOdd = ((int)val % 2 == 0) ? "Even" : "Odd";
-                LowHigh = ((int)val < 19) ? "Low (1 - 18)" : "High (19 - 36)";
+                EvenOdd = (intVal % 2 == 0) ? "Even" : "Odd";
+                LowHigh = (intVal < 19) ? "Low (1 - 18)" : "High (19 - 36)";
                 Color = SetColor();
                 Dozen = SetDozen();
                 Column = SetColumn();
