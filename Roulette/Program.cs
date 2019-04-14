@@ -12,7 +12,7 @@ namespace Roulette
         {
             var rouletteGame = new RouletteGame();
 
-            Console.WriteLine(rouletteGame.SpinWheel().GetWinningBets());
+            Console.WriteLine(rouletteGame.SpinWheel().WinningBets);
             Console.WriteLine();
         }
     }
