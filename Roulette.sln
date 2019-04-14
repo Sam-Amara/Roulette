@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roulette", "Roulette\Roulette.csproj", "{57599BF7-40E6-4265-872F-31E424200CCE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouletteTests", "RouletteTests\RouletteTests.csproj", "{551FF402-AE28-4E05-AFC9-BD30AE8620C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{57599BF7-40E6-4265-872F-31E424200CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57599BF7-40E6-4265-872F-31E424200CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57599BF7-40E6-4265-872F-31E424200CCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{551FF402-AE28-4E05-AFC9-BD30AE8620C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{551FF402-AE28-4E05-AFC9-BD30AE8620C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{551FF402-AE28-4E05-AFC9-BD30AE8620C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{551FF402-AE28-4E05-AFC9-BD30AE8620C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
