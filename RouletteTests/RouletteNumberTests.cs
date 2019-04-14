@@ -113,4 +113,33 @@ namespace Roulette.Tests
             }
         }
     }
+
+    [TestClass()]
+    public class RouletteGameTests
+    {
+        [TestMethod()]
+        public void RouletteGameTest()
+        {
+            var ott = new RouletteGame();
+            Assert.AreEqual(38, ott.RouletteNumbers.Length);
+
+            // Test RouletteGame has generated valid bin numbers
+            CollectionAssert.AreEquivalent(Enumerable.Range(0, 38).ToArray(),
+                                           ott.RouletteNumbers.Select(x => (int)x.Val).ToArray());
+
+            // Test RouletteGame actually generates random bins each time
+            {
+                var randomBins = new List<RouletteNumber>();
+
+                for (int i = 0; i < 10; i++)
+                {
+                    randomBins.Add(ott.SpinWheel());
+                }
+
+                CollectionAssert.AreNotEquivalent(Enumerable.Range(0, 10).ToArray(),
+                                                  randomBins.Select(x => (int)x.Val).ToArray());
+            }
+
+        }
+    }
 }
