@@ -138,6 +138,15 @@ namespace Roulette.Tests
 
                 CollectionAssert.AreNotEquivalent(Enumerable.Range(0, 10).ToArray(),
                                                   randomBins.Select(x => (int)x.Val).ToArray());
+
+                
+                bool isRigged = false;
+                foreach(var b in randomBins)
+                {
+                    isRigged = randomBins.FindAll(x => x == b).Count > 5;
+                    if (isRigged) break;
+                }
+                Assert.IsFalse(isRigged);
             }
 
         }

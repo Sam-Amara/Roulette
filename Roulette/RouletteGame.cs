@@ -24,9 +24,7 @@ namespace Roulette
             randomBin = new Random();
         }
 
-        public RouletteNumber SpinWheel()
-        {
-            return RouletteNumbers[randomBin.Next(38)];
-        }
+        public RouletteNumber SpinWheel() => RouletteNumbers[randomBin.Next(38)];
+        
     }
 }
