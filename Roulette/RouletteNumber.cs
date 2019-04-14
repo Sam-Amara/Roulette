@@ -145,8 +145,8 @@ namespace Roulette
 
             sb.AppendLine($" 2.  {EvenOdd} numbers");
             sb.AppendLine($" 3.  {Color} color");
-            sb.AppendLine($" 4.  {LowHigh} numbers");
-            sb.AppendLine($" 5.  {Dozen} numbers");
+            sb.AppendLine($" 4.  {LowHigh}");
+            sb.AppendLine($" 5.  {Dozen}");
             sb.AppendLine($" 6.  {Column} numbers");
             sb.AppendLine($" 7.  Street: {Row}");
             sb.AppendLine($" 8.  6 Numbers: {String.Join(" | ", DoubleRow)}");
