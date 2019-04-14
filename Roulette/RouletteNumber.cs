@@ -18,6 +18,7 @@ namespace Roulette
         public string[] DoubleRow { get; private set; }
         public string[] Splits { get; private set; }
         public string[] Corners { get; private set; }
+
         public string WinningBets { get; private set; }
 
         private int intVal;
@@ -30,10 +31,9 @@ namespace Roulette
         {
             Val = val;
 
-            intVal = (int)val;
-
-            if (intVal != 0 && intVal != 37)
+            if (Val != Bin.Zero && Val != Bin.ZeroZero)
             {
+                intVal = (int)val;
                 hasTop = (intVal - 3) > 0;
                 hasLeft = (intVal - 1) % 3 > 0;
                 hasRight = (intVal + 1) % 3 != 1;
@@ -122,9 +122,9 @@ namespace Roulette
 
         private string SetDozen()
         {
-            if (intVal / 12.0 <= 1) return "1st 12";
-            if (intVal / 12.0 <= 2) return "2nd 12";
-            return "3rd 12";
+            if (intVal / 12.0 <= 1) return "1st 12 (1 - 12)";
+            if (intVal / 12.0 <= 2) return "2nd 12 (13 - 24)";
+            return "3rd 12 (25 - 36)";
         }
 
         private string SetColor()
@@ -135,7 +135,7 @@ namespace Roulette
             return (EvenOdd == "Odd") ? "Black" : "Red";
         }
 
-        public override string ToString() => (intVal == 37) ? "00" : intVal.ToString();
+        public override string ToString() => (Val == Bin.ZeroZero) ? "00" : intVal.ToString();
 
         private void SetWinningBets()
         {

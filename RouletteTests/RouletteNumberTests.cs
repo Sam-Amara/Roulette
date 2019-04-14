@@ -29,7 +29,7 @@ namespace Roulette.Tests
                 Assert.AreEqual("Odd", ott.EvenOdd);
                 Assert.AreEqual("Red", ott.Color);
                 Assert.AreEqual("Low (1 - 18)", ott.LowHigh);
-                Assert.AreEqual("1st 12", ott.Dozen);
+                Assert.AreEqual("1st 12 (1 - 12)", ott.Dozen);
                 Assert.AreEqual("1st Column", ott.Column);
                 Assert.AreEqual("1/2/3", ott.Row);
                 CollectionAssert.AreEquivalent(new string[] { "1/2/3/4/5/6" }, ott.DoubleRow);
@@ -44,7 +44,7 @@ namespace Roulette.Tests
                 Assert.AreEqual("Even", ott.EvenOdd);
                 Assert.AreEqual("Black", ott.Color);
                 Assert.AreEqual("Low (1 - 18)", ott.LowHigh);
-                Assert.AreEqual("1st 12", ott.Dozen);
+                Assert.AreEqual("1st 12 (1 - 12)", ott.Dozen);
                 Assert.AreEqual("2nd Column", ott.Column);
                 Assert.AreEqual("1/2/3", ott.Row);
                 CollectionAssert.AreEquivalent(new string[] { "1/2/3/4/5/6" }, ott.DoubleRow);
@@ -59,7 +59,7 @@ namespace Roulette.Tests
                 Assert.AreEqual("Odd", ott.EvenOdd);
                 Assert.AreEqual("Red", ott.Color);
                 Assert.AreEqual("Low (1 - 18)", ott.LowHigh);
-                Assert.AreEqual("1st 12", ott.Dozen);
+                Assert.AreEqual("1st 12 (1 - 12)", ott.Dozen);
                 Assert.AreEqual("3rd Column", ott.Column);
                 Assert.AreEqual("1/2/3", ott.Row);
                 CollectionAssert.AreEquivalent(new string[] { "1/2/3/4/5/6" }, ott.DoubleRow);
@@ -74,7 +74,7 @@ namespace Roulette.Tests
                 Assert.AreEqual("Odd", ott.EvenOdd);
                 Assert.AreEqual("Black", ott.Color);
                 Assert.AreEqual("Low (1 - 18)", ott.LowHigh);
-                Assert.AreEqual("2nd 12", ott.Dozen);
+                Assert.AreEqual("2nd 12 (13 - 24)", ott.Dozen);
                 Assert.AreEqual("1st Column", ott.Column);
                 Assert.AreEqual("13/14/15", ott.Row);
                 CollectionAssert.AreEquivalent(new string[] { "10/11/12/13/14/15", "13/14/15/16/17/18" }, ott.DoubleRow);
@@ -89,7 +89,7 @@ namespace Roulette.Tests
                 Assert.AreEqual("Even", ott.EvenOdd);
                 Assert.AreEqual("Black", ott.Color);
                 Assert.AreEqual("High (19 - 36)", ott.LowHigh);
-                Assert.AreEqual("2nd 12", ott.Dozen);
+                Assert.AreEqual("2nd 12 (13 - 24)", ott.Dozen);
                 Assert.AreEqual("2nd Column", ott.Column);
                 Assert.AreEqual("19/20/21", ott.Row);
                 CollectionAssert.AreEquivalent(new string[] { "16/17/18/19/20/21", "19/20/21/22/23/24" }, ott.DoubleRow);
@@ -104,7 +104,7 @@ namespace Roulette.Tests
                 Assert.AreEqual("Even", ott.EvenOdd);
                 Assert.AreEqual("Red", ott.Color);
                 Assert.AreEqual("High (19 - 36)", ott.LowHigh);
-                Assert.AreEqual("3rd 12", ott.Dozen);
+                Assert.AreEqual("3rd 12 (25 - 36)", ott.Dozen);
                 Assert.AreEqual("3rd Column", ott.Column);
                 Assert.AreEqual("34/35/36", ott.Row);
                 CollectionAssert.AreEquivalent(new string[] { "31/32/33/34/35/36" }, ott.DoubleRow);
