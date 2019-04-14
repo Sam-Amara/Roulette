@@ -130,6 +130,32 @@ namespace Roulette
         }
 
         public override string ToString() => (intVal == 37) ? "00" : intVal.ToString();
+
+        public string GetWinningBets()
+        {
+            if (Val != Bin.Zero && Val != Bin.ZeroZero)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine($"Winning bets are :");
+                sb.AppendLine($"\n 1.  Bin number {ToString()}");
+
+                sb.AppendLine($" 2.  {EvenOdd} numbers");
+                sb.AppendLine($" 3.  {Color} color");
+                sb.AppendLine($" 4.  {LowHigh} numbers");
+                sb.AppendLine($" 5.  {Dozen} numbers");
+                sb.AppendLine($" 6.  {Column} numbers");
+                sb.AppendLine($" 7.  Street: {Row}");
+                sb.AppendLine($" 8.  6 Numbers: {String.Join(" or ", DoubleRow)}");
+                sb.AppendLine($" 9.  Splits: {String.Join(" or ", Splits)}");
+                sb.AppendLine($" 10. Corners: {String.Join(" or ", Corners)}");
+
+                return sb.ToString();
+            }
+            else
+            {
+                return ($"\nWinning bets is Bin number {ToString()}");
+            }
+        }
     }
 
     public enum Bin : byte
