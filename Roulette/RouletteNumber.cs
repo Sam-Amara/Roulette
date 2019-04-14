@@ -145,15 +145,15 @@ namespace Roulette
                 sb.AppendLine($" 5.  {Dozen} numbers");
                 sb.AppendLine($" 6.  {Column} numbers");
                 sb.AppendLine($" 7.  Street: {Row}");
-                sb.AppendLine($" 8.  6 Numbers: {String.Join(" or ", DoubleRow)}");
-                sb.AppendLine($" 9.  Splits: {String.Join(" or ", Splits)}");
-                sb.AppendLine($" 10. Corners: {String.Join(" or ", Corners)}");
+                sb.AppendLine($" 8.  6 Numbers: {String.Join(" | ", DoubleRow)}");
+                sb.AppendLine($" 9.  Splits: {String.Join(" | ", Splits)}");
+                sb.AppendLine($" 10. Corners: {String.Join(" | ", Corners)}");
 
                 return sb.ToString();
             }
             else
             {
-                return ($"\nWinning bets is Bin number {ToString()}");
+                return ($"\nWinning bet is Bin number {ToString()}");
             }
         }
     }
